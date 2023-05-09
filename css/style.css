@@ -520,6 +520,7 @@ a:focus {
     height: 75%;
     object-fit: cover;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
 .about .about-content {
