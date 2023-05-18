@@ -17,7 +17,7 @@ h6 {
 }
 
 a {
-    color: #313131;
+    color: #d59ec8;
     transition: .3s;
 }
 
@@ -208,7 +208,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: #c5bfbf;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -238,6 +238,23 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     }
+}
+
+  a::after{
+    content:"";
+    background-color: #3cffef;
+    height: 3px;
+    width: 0;
+    left: 0;
+    display: block;
+    transition: .5s ease-in-out;
+}
+ a:hover::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #3cffef;
+    display: block;
 }
 
 
