@@ -208,7 +208,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #c5bfbf;
+        color: #000000;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -240,7 +240,7 @@ a:focus {
     }
 }
 
-  a::after{
+  .navbar-nav a::after{
     content:"";
     background-color: #3cffef;
     height: 3px;
@@ -249,12 +249,31 @@ a:focus {
     display: block;
     transition: .5s ease-in-out;
 }
- a:hover::after{
+ .navbar-nav a:hover::after{
     content: "";
     height: 3px;
     width: 100%;
     background-color: #3cffef;
     display: block;
+}
+
+@media(max-width:500px){
+    .navbar-nav a::after{
+        content:"";
+        /* background-color: #3cffef; */
+        height: 3px;
+        width: 0;
+        left: 0;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+     .navbar-nav a:hover::after{
+        content: "";
+        height: 3px;
+        width: 20%;
+        /* background-color: #3cffef; */
+        display: block;
+    }
 }
 
 
